@@ -1,0 +1,517 @@
+body { /* es la etiqueta de html que me va a mostrar todo el contenido de la página*/
+    margin:0; /* margen de cero para quitarlas*/
+    padding:0; /* espaciados internos en cero para quitarlos*/
+    background:#272727 ; /*color de fondo de la página*/
+}
+.name { /*primer recuadro*/
+    width: 100%; /* ancho*/
+    height: 300px; /* altura */
+    background:  #003147; /* fondo del recuadro*/
+    transform: skewY(-5deg); /* inclinación del recuadro*/
+}
+.name .content { /* contenido del 1 cuadro*/
+    width: 50%; /* ancho*/
+    height: 50%;  /* altura 150px */
+    position: absolute; /* permite mover el contenido a lo largo de la página más fácil */
+    left:25%; /* se establece el lugar desde los que se va a mover */
+}
+.name .content .p-1 { /* primera palabra*/
+    color: #ffffff; /*color de la letra*/
+    font-family: 'Roboto', sans-serif; /*fuente seleccionada*/
+    font-weight: bolder; /* negrilla*/
+    font-size: 65px; /*tamaño de la letra*/
+    transform: skewY(5deg); /* inclinación para que no quede torcido*/
+    margin-bottom: 0; /*margen inferior en cero para que no tenga espacios hacia abajo*/
+}
+.name .content .p-2 { /* segunda palabra*/
+    color: #ffffff; /*color de la letra*/
+    font-family: 'Roboto', sans-serif;  /*fuente seleccionada*/
+    font-size: 35px;  /*tamaño de la letra*/
+    transform: skewY(5deg); /* inclinación para que no quede torcido*/
+    margin-top: 0;  /*margen superior en cero para que no tenga espacios hacia abajo*/
+    margin-bottom: 0; /*margen inferior en cero para que no tenga espacios hacia abajo*/
+}
+
+.name .img { /* imagen de perfil*/
+    position: absolute;  /* permite mover el contenido a lo largo de la página más fácil */
+    top: 18%; /* distancia del 18% desde arriba*/
+    left: 5%; /* distancia del 5% desde la izquierda*/
+    width: 180px; /*ancho*/
+    height: 180px;/* alto */
+    border-radius: 100%; /*se redondea el cuadro al 100%*/
+    transform: skewY(5deg); /*inclinación para que no quede torcido*/
+    overflow: hidden; /* se oculta lo que se sale de la imagen */
+}
+
+.name .img img { /* redimensionar imagen*/
+    width: 160px; /* ancho se divide entre 2 el tamaño de la imagen 2 veces*/
+    height: 160px; /* alto se divide entre 2 el tamaño de la imagen 2 veces*/
+}
+
+/* siguiente recuadro*/
+
+.info { /*primer cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto */
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+}
+.info .tituloseccion {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/    
+}
+.info .tituloinfo {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la   fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.info .infoinfo {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}   
+.info .a4 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la   fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.info .a5 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}   
+.info .a6 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la   fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.info .a7 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}   
+.info .a8 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la   fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.info .a9 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}   
+.info .a10 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la   fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.info .a11 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}   
+.info .a12 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la   fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.info .a13 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}   
+/* siguiente recuadro*/
+
+.infocontac { /*segundo cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.infocontac .b1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+.infocontac .b2 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infocontac .b3 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.infocontac .b4 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infocontac .b5 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.infocontac .b6 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infocontac .b7 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.infocontac .b8 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infocontac .b9 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+
+/* siguiente recuadro*/
+
+.infoaca { /* tercer cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.infoaca .c1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+.infoaca .c2 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infoaca .c3 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.infoaca .c4 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infoaca .c5 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.infoaca .c6 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infoaca .c7 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+
+/* siguiente recuadro*/
+
+.infotitu { /*cuarto cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.infotitu .d1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+.infotitu .d2 {
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+
+/* siguiente recuadro*/
+
+.infocerti { /* quinto cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.infocerti .e1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+.infocerti .e2 {
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+
+/* siguiente recuadro*/
+
+.inforef { /*sexto cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.inforef .f1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+.inforef .f2 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.inforef .f3 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.inforef .f4 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.inforef .f5 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+
+/* siguiente recuadro*/
+
+.infogus { /*séptimo cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.infogus .g1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+.infogus .g2 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infogus .g3 {   
+    color: #0400fa; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: normal; /* se pone letra normal sin negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+}
+.infogus .g4 {
+    color: #ffffff; /* color del texto*/
+    font-family:'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-weight: bolder; /* se pone en negrilla*/
+    font-size: large; /* tamaño de la fuente*/
+    display: inline; /* cómo se organizan los elementos uno tras otro por defecto está en block para que se alinie una cosa sobre otra*/
+    margin-right: 20px; /*20 px a la derecha*/
+}
+.infogus span { /*etiquetas*/
+    display: inline-block; /* para que quede al frente*/
+    width: auto; /* tamaño automático a su contenido*/
+    height: auto; /* altura automática a su contenido*/
+    padding-left: 1%; /* espaciados internos*/
+    padding-right: 1%; /* espaciados internos*/
+    background: #ff5500; /* color de fondo del recuadro*/
+    color:#ffffff; /*color de la fuente*/
+    font-family: 'Roboto', sans-serif; /* tipo de fuente*/
+    border-radius: 5px; /* redondear las puntas*/
+}
+.infogus span { /*etiquetas*/
+    display: inline-block; /* para que quede al frente*/
+    width: auto; /* tamaño automático a su contenido*/
+    height: auto; /* altura automática a su contenido*/
+    padding-left: 1%; /* espaciados internos*/
+    padding-right: 1%; /* espaciados internos*/
+    background: #ff5500; /* color de fondo del recuadro*/
+    color:#ffffff; /*color de la fuente*/
+    font-family: 'Roboto', sans-serif; /* tipo de fuente*/
+    border-radius: 5px; /* redondear las puntas*/
+}
+.infogus span { /*etiquetas*/
+    display: inline-block; /* para que quede al frente*/
+    width: auto; /* tamaño automático a su contenido*/
+    height: auto; /* altura automática a su contenido*/
+    padding-left: 1%; /* espaciados internos*/
+    padding-right: 1%; /* espaciados internos*/
+    background: #ff5500; /* color de fondo del recuadro*/
+    color:#ffffff; /*color de la fuente*/
+    font-family: 'Roboto', sans-serif; /* tipo de fuente*/
+    border-radius: 5px; /* redondear las puntas*/
+}
+.infogus span { /*etiquetas*/
+    display: inline-block; /* para que quede al frente*/
+    width: auto; /* tamaño automático a su contenido*/
+    height: auto; /* altura automática a su contenido*/
+    padding-left: 1%; /* espaciados internos*/
+    padding-right: 1%; /* espaciados internos*/
+    background: #ff5500; /* color de fondo del recuadro*/
+    color:#ffffff; /*color de la fuente*/
+    font-family: 'Roboto', sans-serif; /* tipo de fuente*/
+    border-radius: 5px; /* redondear las puntas*/
+}
+
+/* siguiente recuadro*/
+
+
+.infocon { /*sexto cuadro*/
+    width: 100%; /* ancho*/
+    height: auto; /* alto*/
+    background: #003147; /*fondo del recuadro donde va el texto*/
+    margin: 5% auto; /* el 5% crea un espaciado arriba y abajo exterior según este valor y el auto controla el espaciado que hay a los lados se pone en auto para que se centre de forma automatica*/
+    padding: 20px; /* espaciado interior*/
+    
+}
+.infocon .h1 {
+    color: #ffffff; /* color del texto*/
+    font-family: 'Roboto', sans-serif; /* roboto es la fuente que quiero poner, y en caso de que esa fuente no sea compatible entonces pondrá una letra en estilo san serif*/
+    font-size: xx-large; /* tamaño de la fuente*/
+    text-align: center; /* se centra el texto*/
+    font-weight: bolder; /* se pone en negrilla*/
+    border-bottom: 2px #ffffff dashed; /* se hace la linea punteada tamaño color y forma*/
+       
+}
+
+
